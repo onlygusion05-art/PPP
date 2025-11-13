@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- ✅ This line is what makes mobile view actually responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Italiana&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header-grid">
+    <div class="container">
+      <div class="menu-bar">
+        <h1>MY PORTFOLIO</h1>
+
+        <!-- ✅ Hamburger button on the right -->
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav id="nav-menu">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html" id="active-btn">CONTACT US</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-grid">
+    <div class="profile-image">
+      <img src="amparado.jpg" alt="Luzangel A. Amparado">
+    </div>
+
+    <div class="text-box">
+      <h2>Contact Me</h2>
+      <p>If you want to reach out, feel free to message me anytime!</p>
+      <p><i class="fa-solid fa-envelope"></i> 
+        Email: <a href="mailto:amparadoluzangel@gmail.com">amparadoluzangel@gmail.com</a></p>
+      <p><i class="fa-brands fa-facebook"></i> 
+        Facebook: <a href="https://www.facebook.com/lzneaprd" target="_blank">Luzangel A. Amparado</a></p>
+      <p><i class="fa-brands fa-github"></i> 
+        GitHub: <a href="https://github.com/amparado08" target="_blank">Miss_L.A</a></p>
+      <p><i class="fa-solid fa-phone"></i> 
+        Contact #: +63 912 345 6789</p>
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

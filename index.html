@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header-grid">
+    <div class="container">
+      <div class="menu-bar">
+        <h1 class="logo">MY PORTFOLIO</h1>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="nav-menu">
+          <a href="index.html" id="active-btn">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-grid">
+    <div class="profile-image">
+      <img src="amparado.jpg" alt="Luzangel A. Amparado">
+    </div>
+    <div class="text-box">
+      <p>Hello It’s me</p>
+      <h2>Luzangel A. Amparado</h2>
+      <p>And I am Information Technology</p>
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

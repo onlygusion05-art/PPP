@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jaini+Purva&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('picture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER BAR ===== */
+.header-grid {
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.menu-bar {
+  background-color: #5a4f4f;
+  border-radius: 20px;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 10px #333;
+  position: relative;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.menu-bar h1 {
+  font-family: 'Italiana', serif;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* ===== NAVIGATION ===== */
+.menu-bar nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background: #a19d9d;
+  padding: 10px 25px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 6px rgb(231, 228, 228);
+  transition: all 0.3s ease;
+}
+
+.menu-bar nav a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Itim', cursive;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.menu-bar nav a:hover {
+  color: #6d0707;
+}
+
+#active-btn {
+  color: aqua;
+}
+
+/* ===== HAMBURGER ICON ===== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  margin-bottom: 20px;
+}
+
+.text-box {
+  background: rgba(128, 128, 128, 0.6);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 400px;
+}
+
+.text-box h2 {
+  font-family: 'Italiana', serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.text-box p {
+  font-family: 'Itim', cursive;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  margin: 6px 0;
+}
+
+.text-box a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.text-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ✅ RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-bar nav {
+    display: none;
+    flex-direction: column;
+    background: rgba(90, 79, 79, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px #4c0f0f;
+    width: 160px;
+    text-align: right;
+  }
+
+  .menu-bar nav.active {
+    display: flex !important;
+  }
+
+  .menu-bar nav a {
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .menu-bar h1 {
+    font-size: 18px;
+  }
+
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .text-box h2 {
+    font-size: 18px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-bar {
+    padding: 10px 20px;
+  }
+
+  .menu-bar h1 {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    font-size: 24px;
+  }
+
+  .profile-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .text-box {
+    padding: 18px;
+  }
+}

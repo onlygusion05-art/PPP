@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <header class="header-grid">
+    <div class="container">
+      <div class="menu-bar">
+        <h1 class="logo">MY PORTFOLIO</h1>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav id="nav-menu">
+          <a href="index.html">HOME</a>
+          <a href="about.html" id="active-btn">ABOUT</a>
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-grid">
+    <div class="profile-image">
+      <img src="amparado.jpg" alt="Luzangel A. Amparado">
+    </div>
+
+    <div class="text-box">
+      <div class="content-box">
+        <h2>About Me</h2>
+        <p>Hi, I’m Luzangel, an IT student driven by curiosity, always willing to learn and improve my skills.</p>
+
+        <h2>Projects</h2>
+        <div class="projects">
+          <p>Enrollment System</p>
+          <p>Cashiering System</p>
+          <p>Water Billing System</p>
+        </div>
+
+        <h2>Tech Stack</h2>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <img src="php.png" alt="PHP">
+          </div>
+          <div class="tech-item">
+            <img src="cpp.png" alt="C++">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
